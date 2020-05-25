@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">parcial1</string>
+    <string name="lista_de_articulos">Lista de Articulos</string>
+    <string name="lista_de_compras">Lista de Compras</string>
+    <string name="check_list_de_compras">Check List de Compras</string>
+    <string name="agenda_de_compras">Agenda de Compras</string>
+    <string name="fecha_introducida">fecha introducida...</string>
+    <string name="fecha1">Fecha</string>
+    <string name="fecha2">Fecha</string>
+    <string name="check_list">Check List de Compras</string>
+    <string name="articuos">articulos</string>
+    <string name="listacompras">listacompras</string>
+    <string name="checkcompras">checkcompras</string>
+    <string name="checkcompras2">checkcompras2</string>
+    <string name="seguir">seguir</string>
+    <string name="back1">back1</string>
+    <string name="checkcompras3">checkcompras3</string>
+    <string name="back2">back2</string>
+    <string name="guardar">guardar</string>
+    <string name="back">back</string>
+</resources>
