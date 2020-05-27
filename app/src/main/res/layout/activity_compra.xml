@@ -87,4 +87,21 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="187dp" />
 
+    <Button
+        android:id="@+id/btn_NameList"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/btnAgendaList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+    <ListView
+        android:id="@+id/listViewAgenda"
+        android:layout_width="304dp"
+        android:layout_height="389dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_NameList" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

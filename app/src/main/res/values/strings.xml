@@ -20,4 +20,6 @@
     <string name="back">back</string>
 
     <string name="listaFecha">Fecha</string>
+    <string name="btnAgendaList"></string>
+
 </resources>
