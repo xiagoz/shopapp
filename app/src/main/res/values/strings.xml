@@ -20,4 +20,6 @@
     <string name="back">back</string>
 
     <string name="listaFecha">Fecha</string>
+    <string name="lista_de_art_culos10">Lista de artículos</string>
+    <string name="borrar">-</string>
 </resources>
