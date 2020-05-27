@@ -5,8 +5,8 @@
     <string name="check_list_de_compras">Check List de Compras</string>
     <string name="agenda_de_compras">Agenda de Compras</string>
     <string name="fecha_introducida">fecha introducida...</string>
-    <string name="fecha1">Fecha</string>
-    <string name="fecha2">Fecha</string>
+    <string name="fecha1">fecha1</string>
+    <string name="fecha2">fecha2</string>
     <string name="check_list">Check List de Compras</string>
     <string name="articuos">articulos</string>
     <string name="listacompras">listacompras</string>
@@ -18,4 +18,6 @@
     <string name="back2">back2</string>
     <string name="guardar">guardar</string>
     <string name="back">back</string>
+
+    <string name="listaFecha">Fecha</string>
 </resources>

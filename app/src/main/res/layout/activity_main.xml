@@ -67,23 +67,25 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/articulos"
+        android:contentDescription="@string/articuos"
+        android:onClick="_Articulos"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:contentDescription="@string/articuos" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/listacompras"
+        android:contentDescription="@string/listacompras"
+        android:onClick="_CompraActivity"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        android:contentDescription="@string/listacompras" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <ImageButton
         android:id="@+id/imageButton5"
