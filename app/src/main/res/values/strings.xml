@@ -20,6 +20,11 @@
     <string name="back">back</string>
 
     <string name="listaFecha">Fecha</string>
+<<<<<<< HEAD
     <string name="btnAgendaList"></string>
 
+=======
+    <string name="lista_de_art_culos10">Lista de artículos</string>
+    <string name="borrar">-</string>
+>>>>>>> 4c4cd480c5c18e0e59982649c50d603e39fdb86c
 </resources>

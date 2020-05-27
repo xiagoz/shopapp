@@ -10,4 +10,16 @@
     <item name="textView6" type="id" />
     <item name="imageButton" type="id" />
     <item name="imageView6" type="id" />
+    <item name="txt_consultar" type="id" />
+    <item name="btnNuevo" type="id" />
+    <item name="btnEliminar" type="id" />
+    <item name="btnActualizar" type="id" />
+    <item name="btnSiguiente" type="id" />
+    <item name="btnAnterior" type="id" />
+    <item name="btnConsultas" type="id" />
+    <item name="btnGuardar" type="id" />
+    <item name="txtNombre" type="id" />
+    <item name="txtApellido" type="id" />
+    <item name="txtEstado" type="id" />
+    <item name="txtArticulo" type="id" />
 </resources>
