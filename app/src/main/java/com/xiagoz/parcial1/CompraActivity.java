@@ -108,4 +108,8 @@ public class CompraActivity extends AppCompatActivity implements DatePickerDialo
         }
     }*/
 
+    public void _ListaActivity(View view){
+        Intent _i = new Intent(this, ListaActivity.class);
+        startActivity(_i);
+    }
 }

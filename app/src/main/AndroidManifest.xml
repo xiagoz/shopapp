@@ -20,6 +20,7 @@
         <activity android:name=".CSeccond"></activity>
         <activity android:name=".CompraActivity"></activity>
         <activity android:name=".Articulos"></activity>
+        <activity android:name=".ListaActivity"></activity>
     </application>
 
 </manifest>

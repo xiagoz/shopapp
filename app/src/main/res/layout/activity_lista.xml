@@ -66,20 +66,20 @@ tools:context=".CompraActivity">
     app:barrierDirection="top"
     tools:layout_editor_absoluteY="731dp" />
 
-<TextView
-    android:id="@+id/txtDate"
-    android:layout_width="300dp"
-    android:layout_height="39dp"
-    android:layout_marginTop="20dp"
-    android:background="@color/colorGray"
-    android:text="@string/listaFecha"
-    android:textColor="@color/colorBlack"
-    android:textSize="30sp"
-    android:textStyle="bold"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.495"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="@+id/guideline" />
+    <TextView
+        android:id="@+id/txtListaArticulo"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorGray"
+        android:text="@string/txt_Articulos"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -95,7 +95,7 @@ tools:context=".CompraActivity">
         android:layout_marginTop="48dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="@string/txt_FechaLista"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"

@@ -20,7 +20,8 @@
     <string name="back">back</string>
 
     <string name="listaFecha">Fecha</string>
-
+    <string name="txt_Articulos">Articulos</string>
+    <string name="txt_FechaLista">Fecha</string>
     <string name="btnAgendaList"></string>
 
 
