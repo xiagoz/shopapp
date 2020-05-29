@@ -27,7 +27,7 @@ public class CompraActivity extends AppCompatActivity implements DatePickerDialo
     ArrayList<String> listaAgenda;
 
     //LLAMADA A LA DB
-    AdminSQLiteOpenHelper db;
+    //AdminSQLiteOpenHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class CompraActivity extends AppCompatActivity implements DatePickerDialo
         setContentView(R.layout.activity_compra);
 
         //CONEXIÓN
-        db = new AdminSQLiteOpenHelper(getApplicationContext(), "db", null, 1);
+        //db = new AdminSQLiteOpenHelper(getApplicationContext(), "db", null, 1);
 
         ImageView imageView = (ImageView) findViewById(R.id.imgBtnNewList);
         imageView.setOnClickListener(new View.OnClickListener() {
