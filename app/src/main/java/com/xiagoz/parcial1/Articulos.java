@@ -115,7 +115,7 @@ public class Articulos extends AppCompatActivity implements View.OnClickListener
                         String descripcion = dbCursor.getString(1);
                         String estado = dbCursor.getString(2);
 
-                        txtConsultar.append(cod + ": " + descripcion +"\nEstado: "+ estado +"\n");
+                        txtConsultar.append(cod + ": " + descripcion +"\nEstado: "+ estado +"\n\n");
                         txtConsultar.setMovementMethod(new ScrollingMovementMethod());
                     } while (dbCursor.moveToNext());
                 }
