@@ -40,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(_i);
     }
 
+    public void _ListaActivity(View v){
+        Intent _i = new Intent(this, CompraActivity.class);
+        startActivity(_i);
+    }
+
 //    //Método para insertar un producto
 //    public void Registrar(View view){
 //        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "db", null, 1);

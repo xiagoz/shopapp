@@ -13,9 +13,12 @@ public class AppSQLiteOpenHepler extends SQLiteOpenHelper {
     public static final String COLUMNA_ID = "_id";
     public static final String COLUMNA_NOMBRE = "descripcion";
 
-    String _SQL = "CREATE TABLE "+ TABLA_NOMBRES+"(_id integer primary key autoincrement, descripcion text not null, estado text not null)";
+    public static final String TABLA_AGENDA = "agenda";
 
-    public AppSQLiteOpenHepler(Context context) {
+    String _SQL = "CREATE TABLE "+ TABLA_NOMBRES+"(_id integer primary key autoincrement, descripcion text not null, estado text not null)";
+    String _QUERY = "CREATE TABLE "+ TABLA_AGENDA+"(_id integer primary key autoincrement, agenda text)";
+
+    public AppSQLiteOpenHepler(Context applicationContext, String db, Context context, int i) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
@@ -23,6 +26,7 @@ public class AppSQLiteOpenHepler extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         db.execSQL(_SQL);
+        db.execSQL(_QUERY);
     }
 
     @Override

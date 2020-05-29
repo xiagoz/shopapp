@@ -100,7 +100,7 @@ public class Articulos extends AppCompatActivity implements View.OnClickListener
 
     private void consultar() {
         try {
-            AppSQLiteOpenHepler _SQLite = new AppSQLiteOpenHepler(this);
+            AppSQLiteOpenHepler _SQLite = new AppSQLiteOpenHepler(getApplicationContext(), "db", this, 1);
             SQLiteDatabase db = _SQLite.getWritableDatabase();
 
             dbCursor = null;
@@ -127,7 +127,7 @@ public class Articulos extends AppCompatActivity implements View.OnClickListener
 
     public boolean DeleteRecord() {
         boolean sw = false;
-        AppSQLiteOpenHepler _SQLite = new AppSQLiteOpenHepler(this);
+        AppSQLiteOpenHepler _SQLite = new AppSQLiteOpenHepler(getApplicationContext(), "db", this, 1);
         if (_id != 0) {
             try {
                 SQLiteDatabase db = _SQLite.getWritableDatabase();
@@ -147,7 +147,7 @@ public class Articulos extends AppCompatActivity implements View.OnClickListener
     }
 
     public void GetAllData () {
-        AppSQLiteOpenHepler _SQLite = new AppSQLiteOpenHepler(this);
+        AppSQLiteOpenHepler _SQLite = new AppSQLiteOpenHepler(getApplicationContext(), "db", this, 1);
         SQLiteDatabase db = _SQLite.getWritableDatabase();
         dbCursor = null;
 
@@ -163,7 +163,7 @@ public class Articulos extends AppCompatActivity implements View.OnClickListener
 
     public Boolean setData() {
         Boolean sw = false;
-        AppSQLiteOpenHepler _SQLite = new AppSQLiteOpenHepler(this);
+        AppSQLiteOpenHepler _SQLite = new AppSQLiteOpenHepler(getApplicationContext(), "db", this, 1);
         if (this.txtNombre.getText().toString() != "" &&
                 this.txtApellido.getText().toString() != "") {
             try {
@@ -192,7 +192,7 @@ public class Articulos extends AppCompatActivity implements View.OnClickListener
 
     //Método para modificar un artículo o producto
     public void modificar() {
-        AppSQLiteOpenHepler _SQLite = new AppSQLiteOpenHepler(this);
+        AppSQLiteOpenHepler _SQLite = new AppSQLiteOpenHepler(getApplicationContext(), "db", this, 1);
         SQLiteDatabase db = _SQLite.getWritableDatabase();
 
         if (this.txtNombre.getText().toString() != "" &&
