@@ -22,4 +22,5 @@
     <item name="txtApellido" type="id" />
     <item name="txtEstado" type="id" />
     <item name="txtArticulo" type="id" />
+    <item name="imgBtnNewList" type="id" />
 </resources>

@@ -25,8 +25,8 @@ public class ListaActivity extends AppCompatActivity {
         });
     }
 
-    public void _CompraActivity(View v){
-        Intent _i = new Intent(this, MainActivity.class);
+    public void CompraActivity(View v){
+        Intent _i = new Intent(this, CompraActivity.class);
         startActivity(_i);
     }
 

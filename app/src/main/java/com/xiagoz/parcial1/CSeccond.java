@@ -63,8 +63,6 @@ public class CSeccond extends AppCompatActivity {
     }
 
 
-
-
     public void CPrimary(View v){
         Intent _i = new Intent(this, CPrimary.class);
         startActivity(_i);
@@ -73,7 +71,7 @@ public class CSeccond extends AppCompatActivity {
 
     private void consultar() {
         try {
-            AppSQLiteOpenHepler _SQLite = new AppSQLiteOpenHepler(this);
+            AppSQLiteOpenHepler _SQLite = new AppSQLiteOpenHepler(getApplicationContext(), "db", this, 1);
             SQLiteDatabase db = _SQLite.getWritableDatabase();
 
             dbCursor = null;

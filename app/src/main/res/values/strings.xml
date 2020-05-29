@@ -19,18 +19,9 @@
     <string name="guardar">guardar</string>
     <string name="back">back</string>
     <string name="listaFecha">Fecha</string>
-<<<<<<< HEAD
     <string name="btnAgendaList"></string>
     <string name="lista_de_art_culos10">Lista de artículos</string>
     <string name="borrar">-</string>
-=======
     <string name="txt_Articulos">Articulos</string>
     <string name="txt_FechaLista">Fecha</string>
-    <string name="btnAgendaList"></string>
-
-
-    <string name="lista_de_art_culos10">Lista de artículos</string>
-    <string name="borrar">-</string>
-
->>>>>>> bceb4ed1cd5583e6e9e81b7ae798379b0701faa8
 </resources>
