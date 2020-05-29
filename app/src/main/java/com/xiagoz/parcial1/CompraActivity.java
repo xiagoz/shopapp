@@ -4,15 +4,14 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
-import androidx.recyclerview.widget.RecyclerView;
 
 import java.text.DateFormat;
 import java.util.ArrayList;
@@ -24,20 +23,18 @@ public class CompraActivity extends AppCompatActivity implements DatePickerDialo
     ListView listViewAgenda;
 
     //ARRAY DONDE VAMOS A GUARDAR LA AGENDA EXTRAIDA EN LA BASE DE DATOS.
-    ArrayList<String> listaAgenda;
+    //ArrayList<Agenda> listaAgenda;
+    ArrayList<String> listaInformacion;
 
     //LLAMADA A LA DB
-    AdminSQLiteOpenHelper db;
+    AppSQLiteOpenHepler db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compra);
 
-        //CONEXIÓN
-        db = new AdminSQLiteOpenHelper(getApplicationContext(), "db", null, 1);
-
-        ImageView imageView = (ImageView) findViewById(R.id.imgBtnNewList);
+        ImageView imageView = (ImageView) findViewById(R.id.imgBtnGuardarAgenda);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,10 +43,18 @@ public class CompraActivity extends AppCompatActivity implements DatePickerDialo
             }
         });
 
+        //CONEXIÓN
+        db = new AppSQLiteOpenHepler(getApplicationContext(), "db", null, 1);
+
         //ListView del xml con el .java
         listViewAgenda = (ListView) findViewById(R.id.listViewAgenda);
 
+        //CONSULTAR A LA LISTA DE AGENDA
+        //consultarListaAgenda();
 
+        //ENVIA LA INFORMACIÓN QUE SE QUIERE MOSTRAR EN EL ACTIVITY
+        ArrayAdapter adaptador = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listaInformacion);
+        //listViewAgenda.setAdapter(adaptador);
     }
 
     public void _MainActivity(View v){
@@ -73,5 +78,34 @@ public class CompraActivity extends AppCompatActivity implements DatePickerDialo
         btnAgenda.setText(currentDateString);
     }
 
+    //MÉTODO PARA HACER LA CONSULTA A LA DB POR LA LISTA DE AGENDA
+    /*private void consultarListaAgenda(){
+        SQLiteDatabase daba = db.getReadableDatabase();
+
+        Agenda agenda = null;
+        listaAgenda = new ArrayList<Agenda>();
+
+        //QUERY A LA TABLA AGENDA
+        Cursor cursor = daba.rawQuery("SELECT * FROM "+TABLA_NOMBRES, null);
+
+        while (cursor.moveToNext()){
+            agenda = new Agenda();
+            agenda.setId(cursor.getInt(0));
+            agenda.setNombre(cursor.getString(1));
+
+            listaAgenda.add(agenda);
+        }
+        obtenerLista();
+    }*/
+
+    /*private void obtenerLista() {
+
+        listaInformacion = new ArrayList<String>();
+
+        for(int i = 0; i < listaAgenda.size(); i++)
+        {
+            listaInformacion.add(listaAgenda.get(i).getId()+" - "+listaAgenda.get(i).getNombre());
+        }
+    }*/
 
 }
